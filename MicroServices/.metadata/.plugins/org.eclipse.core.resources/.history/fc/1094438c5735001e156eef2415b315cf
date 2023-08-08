@@ -1,0 +1,10 @@
+package com.thales.service;
+
+public class EmployeeService implements IEmployeeService {
+
+	@Override
+	public double anualSalary(double salary) {
+		return salary * 12;
+	}
+
+}

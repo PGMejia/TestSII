@@ -1,0 +1,5 @@
+package com.thales.service;
+
+public interface EmployeeService {
+
+}

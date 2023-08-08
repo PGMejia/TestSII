@@ -1,0 +1,11 @@
+package com.thales.entity;
+
+public class Employee {
+
+	 	private int id;
+	    private String employee_name;
+	    private double employee_salary; // cambiado a double
+	    private int employee_age; // cambiado a int
+	    private String profile_image;	    	    
+	    
+}

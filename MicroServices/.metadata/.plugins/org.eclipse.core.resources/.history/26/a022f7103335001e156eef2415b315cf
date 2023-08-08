@@ -1,0 +1,5 @@
+package com.thales.configuration;
+
+public class AppConfig {
+
+}

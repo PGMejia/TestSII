@@ -1,0 +1,7 @@
+package com.thales.service;
+
+public interface IEmployeeService {
+	
+	public double anualSalary(double salary);
+
+}

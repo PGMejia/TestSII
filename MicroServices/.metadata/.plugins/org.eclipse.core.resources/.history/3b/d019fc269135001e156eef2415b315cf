@@ -1,0 +1,10 @@
+package com.thales.entity;
+
+import java.util.List;
+
+public class EmployeeResponse {
+	
+    private String status;
+    private List<Employee> data;
+
+}

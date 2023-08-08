@@ -1,0 +1,8 @@
+package com.thales.entity;
+
+public class EmployeeResponseWrapper {
+	 	private String status;
+	    private String message;
+	    private Employee data;
+
+}

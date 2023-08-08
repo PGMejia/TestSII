@@ -1,0 +1,13 @@
+package com.thales.repository;
+
+import com.thales.entity.Employee;
+import com.thales.entity.EmployeeResponse;
+
+public interface IEmployeeRepository {
+	
+	public EmployeeResponse getEmployees();
+	
+	 public Employee getEmployeeById(String id);
+	
+
+}

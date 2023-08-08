@@ -1,0 +1,14 @@
+package com.thales.repository;
+
+import java.util.List;
+
+import com.thales.entity.Employee;
+import com.thales.entity.EmployeeResponse;
+
+public interface IEmployeeRepository {
+	
+	public List<Employee> getEmployees();
+	public Employee getEmployeeById(String id);
+	
+
+}

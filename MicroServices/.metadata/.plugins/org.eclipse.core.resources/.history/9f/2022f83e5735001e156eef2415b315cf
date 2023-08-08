@@ -1,0 +1,36 @@
+package com.thales.repository;
+
+import java.util.Collections;
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.web.client.RestTemplate;
+import com.thales.entity.Employee;
+import com.thales.entity.EmployeeResponse;
+
+@Repository
+public class EmployeeRepository implements IEmployeeRepository {
+
+	private static final String BASE_URL = "http://dummy.restapiexample.com/api/v1";
+	private RestTemplate _restTemplate;
+		
+	
+	public EmployeeRepository(RestTemplate restTemplate) {
+		this._restTemplate = restTemplate;
+	}
+
+	@Override
+	public List<Employee> getEmployees() {
+	    EmployeeResponse response = _restTemplate.getForObject(BASE_URL + "/employees", EmployeeResponse.class);
+	    if (response != null) {
+	        return response.getData();
+	    } else {
+	        return Collections.emptyList();
+	    }
+	}
+	@Override
+	public Employee getEmployeeById(String id) {
+		return _restTemplate.getForObject(BASE_URL + "/employee/" + id, Employee.class);
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.thales.repository;
+
+import com.thales.entity.Employee;
+import com.thales.entity.EmployeeResponse;
+
+public class EmployeeRepository implements IEmployeeRepository {
+
+	@Override
+	public EmployeeResponse getEmployees() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee getEmployeeById(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

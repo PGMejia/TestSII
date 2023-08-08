@@ -1,0 +1,5 @@
+package com.thales.entity;
+
+public class EmployeeResponseWrapper {
+
+}
