@@ -1,0 +1,26 @@
+<div>
+  <input type="text" [(ngModel)]="employeeId" placeholder="Enter Employee ID">
+  <button (click)="fetchEmployeeData()">Search</button>
+</div>
+
+<table class="table table-hover table-striped" *ngIf="employees && employees.length">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Salary</th>
+      <th>Age</th>
+      <th>Annual Salary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <td>{{ employee.id }}</td>
+      <td>{{ employee.employee_name }}</td>
+      <td>{{ employee.employee_salary }}</td>
+      <td>{{ employee.employee_age }}</td>
+      <td>{{ employee.employee_salary * 12 }}</td> <!-- Computed annual salary -->
+    </tr>
+  </tbody>
+</table>
+
